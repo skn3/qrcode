@@ -9,7 +9,6 @@ Function Main:Int()
 End
 
 Class MyApp Extends App
-	Field qr:QRCode
 	Field image:Image
 	Field tried:Bool
 	Field textIndex:= 0
