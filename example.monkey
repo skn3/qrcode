@@ -13,7 +13,7 @@ Class MyApp Extends App
 	Field image:Image
 	Field tried:Bool
 	Field textIndex:= 0
-	Field text:=["&SMD&TEST_ROUTER&WPA&PASSWORD123&DFDFDF", "qr codes are fun", "123456", "this is longer text and I think teh qr code should get a lotttttttt bigger to fit the size ... lets hope so ok ?"]
+	Field text:=["", "qr codes are fun", "123456", "this is longer text and I think teh qr code should get a lotttttttt bigger to fit the size ... lets hope so ok ?"]
 	
 	Method OnCreate:Int()
 		' --- setup the game ---
