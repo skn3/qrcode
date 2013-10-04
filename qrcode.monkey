@@ -1522,11 +1522,11 @@ End
 Public
 
 'functions
-Function CreateQRImage:Image(text:String, size:Int = 2, margin:Int = 2)
+Function CreateQRImage:Image(text:String, size:Int = 2, margin:Int = 2, image:Image = Null)
 	' --- wrapper for creating a QRImage in 1 shot ---
 	Try
 		Local qr:= QRCode.getMinimumQRCode(text)
-		Local image:= qr.createImage(size, margin)
+		image = qr.createImage(size, margin, image)
 		Return image
 	Catch exception:QRCodeException
 		Return Null
